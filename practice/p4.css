@@ -1,0 +1,25 @@
+.cat{
+  background-image: url("cat.jpg");
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  display: inline-block;
+}
+.cat2{
+  background-image: url("cat.jpg");
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.cat3{
+  background-image: url("cat.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  display: inline-block;
+}

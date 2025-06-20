@@ -1,0 +1,40 @@
+body{
+  text-align: center;
+}
+.big{
+  height:  600px;
+  width: 600px ;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items:  ;
+  align-content: center ;
+}
+div{
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+  border: 2px solid black;
+  
+  
+}
+.box1{
+  background-color: rgb(32, 202, 83);
+}
+.box2{
+  background-color: rgb(49, 32, 202);
+  height: 200px;
+}
+.box3{
+  background-color: rgb(32, 123, 202);
+  height: 75px;
+}
+.box4{
+  background-color: rgb(185, 202, 32);
+}
+.box5{
+  background-color: rgb(202, 32, 32);
+}

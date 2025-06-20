@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="script.css">
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <title>Akshat's Portfolio</title>
+  
+
+  
+  
+</head>
+<body>
+  
+
+  <!-- Navigation Bar -->
+
+  <div class="background">
+  <nav class="nav">
+    <a href="my.html">
+    <img src="logo.png" alt="" class="homeimg"></a>
+    <a href="my.html"> 
+    <img src="" alt=""></a>
+    <div class="navbar-links">
+      
+      <div class="text">
+        
+        <a href="aboutme.html" class="scribble-button">About Me</a>
+        <a href="Education.html" class="scribble-button">Education</a>
+        <a href="Projects.html" class="scribble-button">Projects</a>
+      <a href="javascript:void(0)" class="scribble-button" onclick="toggleSidePane()">Contact</a>
+      
+    </div>
+    
+            <a href="https://www.linkedin.com/in/ak-a-b62b8b344/ " class="scribble-button"> <i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Akshat144" class="scribble-button"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:aakshat4444@gmail.com" class="scribble-button"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+    </div>
+    
+  </nav>
+
+  <!-- Background Section -->
+  
+    <div class="content">
+      <h1><img src="https://readme-typing-svg.herokuapp.com?font=Dancing+Script&size=32&letterSpacing=&duration=3000&pause=20&color=FFFFFF&center=true&vCenter=true&repeat=false&random=true&width=435&lines=Hi%F0%9F%91%8B+Akshat+here!" alt="Typing SVG" /></a></h1>
+      <p>Curious, driven, and passionate about AI and technology. Constantly learning and evolving.</p>
+      <div class="quote">
+        "The more I learn, the more I realize how much there is to explore."
+      </div>
+    </div>
+    
+    <div class="resume">
+      <a href="ResumeAkshat.pdf" 
+      class="download-btn" target="_blank">
+         Resume
+      <i class="fa-solid fa-download"></i>
+    </a>
+    </div>
+  </div>
+  <!-- Side Pane -->
+<!-- Button to toggle the side pane -->
+<a href="javascript:void(0)" class="scribble-button" onclick="toggleSidePane()">Contact</a>
+
+<!-- The side pane itself -->
+<div id="sidePane" class="side-pane">
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleSidePane()">&times;</a>
+  <form>
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
+ 
+  <script>
+    function toggleSidePane() {
+  var sidePane = document.getElementById("sidePane");
+  // Toggle the width of the side pane between 0 (closed) and 300px (open)
+  if (sidePane.style.width === "0px" || sidePane.style.width === "") {
+    sidePane.style.width = "300px";  // Open side pane
+  } else {
+    sidePane.style.width = "0";  // Close side pane
+  }
+}
+
+
+  </script>
+  
+</body>
+</html>

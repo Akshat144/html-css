@@ -1,0 +1,53 @@
+.thumbnail{
+width: 300px;
+margin-top: 20px;
+border: none;
+object-fit: contain;
+border-radius: 10px;
+
+object-position: bottom;
+display: inline-block;}
+.search{
+  margin:0px 0px 0px px;
+  width: ;
+  padding: 10px;
+  display: block;
+}
+.video-title{
+  margin-top: 5px;
+}
+
+.video-author,
+.video-stats{
+
+}
+.video-preview{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+ 
+}
+.channel-pic{
+  display: inline-block;
+  width: 40px;
+  vertical-align: top;
+  margin-right: 7px;
+
+}
+.video-info{
+  display: inline-block ;
+  width: 200px;
+}
+.profile-pic{
+  width: 100%;
+  border-radius: 100px;
+  margin-top: 2px;
+  
+}
+div{
+  cursor: pointer;
+}
+.block{display: inline-block;}
+.images{
+  display: block;
+}

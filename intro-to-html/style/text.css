@@ -1,0 +1,36 @@
+
+p{font-family: arial;}
+.video{
+  
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  width: 400px;
+  line-height: 35px;
+  margin-bottom: 0px;
+}
+.bottom{background-color: red;
+  padding: 10px 0px 10px 0px;
+  text-align:center;
+  color: white;
+
+}
+span:hover{font-size: xx-large;
+text-decoration: underline;
+cursor: pointer;
+margin-left: 23px;}
+.views{
+  color: rgb(110, 100, 100);
+  margin-top: 3px;
+}
+.name{
+  color: rgb(110, 100, 100);
+}
+.paragraph{
+  color: rgb(110, 100, 100);
+  width:310px;
+  line-height: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}

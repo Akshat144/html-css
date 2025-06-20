@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+/* General Styles */
+html,body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+  color: white; /* Corrected color */
+  height: 100% ;
+  width: 100% !important;
+  overflow: hidden;
+  margin:0;
+}
+
+
+@keyframes enter{
+  from{  font-size: 14px; }
+  to{  font-size: 18px;}
+}
+
+/* Navigation Bar */
+.nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 1rem 0;
+  z-index: 2;
+
+}
+.homeimg{
+  height: 70%;
+  border-radius: 50%;
+  position: absolute;
+  
+  
+}
+/* General Button Styles */
+.scribble-button {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease,  /* For smooth glow effect */
+}
+
+.scribble-button:hover {
+  color: #007BFF; /* Bright blue text */
+  text-shadow: 
+    0 0 10px #007BFF, 
+    0 0 20px #0056b3, 
+    0 0 30px #003580; /* Adds the glow effect */
+}
+nav a {
+  color: white;
+  margin: 0 25px;
+  font-size: 18px;
+  font-weight: 600;
+  animation: enter 2s ;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #35605A;
+  
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+}
+.icons a{
+  padding: 5px ; 
+  margin: 0px ;
+}
+.icons{
+  margin-left: 10vw;
+}
+/* Background Section */
+.background {
+  position: relative;
+  height: 100% !important; 
+  width: 100% !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('Akshat1.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  opacity: 1;
+}
+
+@keyframes backgroundAnimation {
+  0%,100% {
+    transform: scale(1.06);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Content */
+.content {
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 25% ;
+  text-align: center;
+  color: white; /* Ensures text is white */
+  padding: 20px;
+  backdrop-filter: none; /* Temporarily remove backdrop filter to check */
+  border-radius: 10px;
+  animation:backgroundAnimation 3s ease-in-out infinite ;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  font-style: italic;
+  animation: slideIn 2s ease-in-out forwards;
+  
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 40px;
+  font-style: italic;
+  animation: slideIn 2s ease-in-out forwards;
+}
+.resume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 8%;
+  width: 8%;
+  border: white solid;
+  bottom: 15% ;
+  left: 46.9%;
+  background:transparent; /* Background color of the box */
+  border-radius: 10px;  /* Optional: Rounded corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);  /* Initial faint glow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* Smooth transition for glow and scaling */
+  
+}
+.resume:hover {
+  box-shadow: 0 0 10px #007BFF, 
+  0 0 20px #0056b3, 
+  0 0 30px #003580;  /* Glowing effect on hover */
+  transform: scale(1.05); /* Optional: Slightly enlarge the box */
+}
+/* Remove default hyperlink styles */
+.resume a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent element */
+  outline: none; /* Removes the focus outline */
+  
+}
+
+
+.side-pane {
+  height: 70%;
+  width: 0;  /* Initially hidden */
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 108, 66,0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.side-pane a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-pane a:hover {
+  color: #f1f1f1;
+}
+
+.side-pane .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.side-pane form {
+  margin: 20px;
+  color: white;
+}
+
+.side-pane form input,
+.side-pane form textarea,
+.side-pane form button {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.side-pane form button {
+  background-color: white;
+  color: rgb(255, 108, 66);
+  width: 30%;
+  
+  
+}
+
+.side-pane form button:hover {
+  border: rgb(255, 108, 66) solid;
+}
+.content-edu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 10%;
+  left: 0% ;
+  text-align: center;
+  color: white; /* Ensures text is white */
+  padding: 20px;
+  backdrop-filter: none; /* Temporarily remove backdrop filter to check */
+  border-radius: 10px;
+  animation: ;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.content h1 {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  
+}
+
+.content p {
+  font-size: 20px;
+  font-weight: 300;
+  /* margin-top: 20px; */
+  font-style: italic;
+  animation: slideIn 2s ease-in-out forwards;
+  
+}
+.edu-head{
+  position: absolute;
+  left: 5%;
+  top: -5%;
+  animation: up 2s ease-in-out forwards;
+  
+}
+@keyframes up {
+  0% {
+    transform: translatey(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.org{
+  border: white 2px solid;
+  border-radius: 50px;
+  width: 70%;
+  height: 25%;
+  margin-bottom: 5px;
+  backdrop-filter: blur(10px);
+  margin-top: 10px;
+  max-height:50% ;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  
+
+}
+.org p{
+  width: 70%;
+  margin: 10px ;
+  margin-left: 5%;
+}
+.org1,.org3
+{
+  margin-right: 0px ;
+  margin-left: 30%;
+  transition: ;
+  animation: slideIn 2s ease-in-out forwards;
+  
+}
+.org2
+{
+   margin-right: 30%;
+   margin-left: 0;
+   animation: slideInleft 2s ease-in-out forwards;
+  
+  
+}
+@keyframes slideInleft {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.org3 p{
+  margin-left: 5%;
+  
+
+}
+
+
+.edu-img {
+  height: 70%;  /* Adjust to maintain aspect ratio */
+  width: auto;  /* Control the size of the image */
+  max-width: 200px;  /* Ensure it doesn't get too large */
+  top: 0;
+  padding: 5px !important;
+  transform: rotate(10deg);  /* Slight rotation for dynamic feel */
+
+  border-radius: 15px;  /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition */
+}
+
+.edu-img:hover {
+  transform: rotate(0deg) scale(1.05);  /* Reset rotation on hover and add scaling */
+   /* Enhanced shadow on hover */
+}
+
+
